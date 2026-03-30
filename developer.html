@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer – ICETI 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --card-bg: #060f2b;
+      --card-border: rgba(255, 255, 255, 0.1);
+      --card-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      --gradient-border: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
+    }
+
+    body {
+      background: #040a1e;
+      color: var(--white);
+    }
+
+    .static-page-hero {
+      background: linear-gradient(135deg, #060f2b 0%, #0d1b4b 100%);
+      padding: 140px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .static-page-hero::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 150px;
+      background: linear-gradient(to top, #040a1e, transparent);
+    }
+
+    .dev-section {
+      padding: 60px 0 120px;
+    }
+
+    .dev-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .dev-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      text-align: center;
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: var(--card-shadow);
+    }
+
+    .dev-card:hover {
+      transform: translateY(-15px);
+      border-color: rgba(255, 255, 255, 0.25);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    }
+
+    .dev-img-wrapper {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 2rem;
+      padding: 6px;
+      border-radius: 50%;
+      background: var(--gradient-border);
+    }
+
+    .dev-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--card-bg);
+      background: var(--navy-mid);
+    }
+
+    .dev-img-top {
+      object-position: center 20%;
+    }
+
+
+    .dev-name {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .dev-role {
+      font-size: 0.9rem;
+      color: #3b82f6;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .dev-role::before {
+      content: "< >";
+      font-weight: 800;
+      font-size: 0.8rem;
+    }
+
+    .dev-tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 0.4rem 1.2rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.03em;
+    }
+
+    .dev-desc {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      max-width: 320px;
+      text-align: center;
+    }
+
+    .dev-socials {
+      display: flex;
+      gap: 1.25rem;
+      justify-content: center;
+      margin-top: auto;
+    }
+
+    .social-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .social-icon:hover {
+      background: var(--gold);
+      color: var(--white);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(201, 152, 42, 0.3);
+    }
+
+    /* SVG Icons for better quality */
+    .icon-svg {
+      width: 20px;
+      height: 20px;
+      fill: currentColor;
+    }
+
+    @media (max-width: 1024px) {
+      .dev-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 2rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .dev-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1.5rem;
+      }
+      .static-page-hero {
+        padding: 100px 0 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ═══ HEADER ═══ -->
+  <header id="site-header">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-text">
+          <span class="logo-college">Mohamed Sathak A.J. College of Engineering</span>
+          <span class="logo-abbr">SATHAK <span class="gold">2026</span></span>
+          <span class="logo-sub">Sustainable &amp; Advanced Technologies</span>
+        </div>
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#call-for-contributions">Call for Papers</a></li>
+          <li><a href="index.html#programme">Programme</a></li>
+          <li><a href="index.html#venue">Venue</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="static-page-hero">
+    <div class="container">
+      <h1 class="hero-title">Meet the <span class="gold">Team</span></h1>
+      <p class="hero-subtitle">The developers behind the ICETI 2026 platform</p>
+    </div>
+  </section>
+
+  <section class="dev-section">
+    <div class="container">
+      <div class="dev-grid">
+        
+        <!-- Developer 1: Adhisindha T -->
+        <div class="dev-card">
+          <div class="dev-img-wrapper">
+            <img src="developer.jpg" alt="Adhisindha T" class="dev-img dev-img-top">
+          </div>
+          <h3 class="dev-name">Adhisindha T</h3>
+          <p class="dev-role">Frontend Developer</p>
+          <div class="dev-socials">
+            <a href="https://github.com/adhisindha" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/adhi-sindha-33aa60327" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:adhisindha29@gmail.com" class="social-icon" aria-label="Email">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l12-9.725v15.438h-24v-15.438l12 9.725z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Developer 2: Jasmin Banu M -->
+        <div class="dev-card">
+          <div class="dev-img-wrapper">
+            <img src="developer2.jpg" alt="Jasmin Banu M" class="dev-img dev-img-top">
+          </div>
+          <h3 class="dev-name">Jasmin Banu M</h3>
+          <p class="dev-role">UI/UX Designer</p>
+          <div class="dev-socials">
+            <a href="https://guthub.com/TechJas" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jasminbanu-tech" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:jasmin03banu@gmail.com" class="social-icon" aria-label="Email">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l12-9.725v15.438h-24v-15.438l12 9.725z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Developer 3: Annie Jeslin -->
+        <div class="dev-card">
+          <div class="dev-img-wrapper">
+            <img src="developer3.jpg" alt="Annie Jeslin" class="dev-img">
+          </div>
+          <h3 class="dev-name">Annie Jeslin</h3>
+          <p class="dev-role">Web Tester</p>
+          <div class="dev-socials">
+            <a href="https://github.com/anniejeslin" target="_blank" class="social-icon" aria-label="GitHub">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/annie-jeslin-31076135a" target="_blank" class="social-icon" aria-label="LinkedIn">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="mailto:madelynnjeslin@gmail.com" class="social-icon" aria-label="Email">
+              <svg class="icon-svg" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l12-9.725v15.438h-24v-15.438l12 9.725z"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-abbr">SATHAK <span class="gold">2026</span></span>
+        <span class="logo-sub">International Conference on Sustainable and Advanced Technologies for Holistic Academic Knowledge</span>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-row">
+          <a href="index.html#about">About</a>
+          <a href="index.html#call-for-contributions">Call for Papers</a>
+          <a href="index.html#programme">Programme</a>
+          <a href="index.html#venue">Venue</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-links-row">
+          <a href="terms-and-conditions.html">Terms and Conditions</a>
+          <a href="developer.html">Developer</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 SATHAK 2026 – All Rights Reserved. Powered by the SATHAK 2026 Organizing Committee, Chennai, India.</p>
+    </div>
+  </footer>
+</body>
+</html>

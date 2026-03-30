@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SATHAK 2026 – International Conference on Sustainable and Advanced Technologies for Holistic Academic Knowledge
+  </title>
+  <meta name="description"
+    content="SATHAK 2026 – International Conference on Sustainable and Advanced Technologies for Holistic Academic Knowledge. Join us for a premier academic event at MSAJCE." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══ HEADER / NAV ═══ -->
+  <header id="site-header">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        <img src="logo.svg" alt="ICETI Logo" class="logo-img" onerror="this.style.display='none'" />
+        <div class="logo-text">
+          <span class="logo-college">Mohamed Sathak A.J. College of Engineering</span>
+          <span class="logo-abbr">SATHAK <span class="gold">2026</span></span>
+          <span class="logo-sub">Sustainable &amp; Advanced Technologies</span>
+        </div>
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#call-for-contributions">Call for Papers</a></li>
+          <li><a href="#programme">Programme</a></li>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#sponsors">Sponsors</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══ HERO ═══ -->
+  <style>
+    .hero-sponsors {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 2rem;
+      animation: fadeInDown 0.8s both;
+      animation-delay: 0.1s;
+    }
+
+    .hero-sponsors-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.75);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .hero-sponsors-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .hero-sponsor-badge {
+      background: rgba(255, 255, 255, 0.97);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 12px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .hero-sponsor-badge:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .hero-sponsor-badge img {
+      height: 50px;
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    @media (max-width: 640px) {
+      .hero-sponsor-badge img {
+        height: 36px;
+      }
+
+      .hero-sponsors-row {
+        gap: 16px;
+      }
+
+      .hero-sponsor-badge {
+        padding: 8px 14px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+
+  <section id="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <!-- College Name Banner -->
+      <div class="hero-college-banner" style="animation: fadeInDown 0.7s both;">
+        <span class="hero-college-icon">🎓</span>
+        <span class="hero-college-name">Mohamed Sathak A.J. College of Engineering, Chennai</span>
+      </div>
+      <div class="hero-college-divider"></div>
+
+      <!-- Technically Co-Sponsored By -->
+      <div class="hero-sponsors">
+        <p class="hero-sponsors-label" style="margin-bottom: 0.5rem;">Knowledge and Publication Partner</p>
+        <div class="hero-sponsor-badge" style="margin-bottom: 1.5rem;">
+          <img src="logo-ict-academy.png" alt="ICT Academy" />
+        </div>
+        
+        <p class="hero-sponsors-label" style="margin-bottom: 1rem;">Technically Co-Sponsored By</p>
+        <div class="hero-sponsors-row">
+          <div class="hero-sponsor-badge">
+            <img src="logo-csi.png" alt="Computer Society of India (CSI)" />
+          </div>
+          <div class="hero-sponsor-badge">
+            <img src="logo-iete.png" alt="Institution of Electronics and Telecommunication Engineers (IETE)" />
+          </div>
+        </div>
+      </div>
+
+      <p class="hero-tag">📅 23 – 24 JULY 2026 &nbsp;|&nbsp; MSAJCE, Siruseri, Chennai</p>
+      <h1 class="hero-title">International Conference on<br /><span class="gold">Sustainable and
+          Advanced<br />Technologies</span> for Holistic Academic Knowledge</h1>
+      <p class="hero-subtitle">Celebrating 25 Years of Academic Excellence at MSAJCE</p>
+      <div class="hero-buttons">
+        <a href="https://forms.gle/nLujuVjGtvdPqF4t7" target="_blank" class="btn btn-gold">Register Now</a>
+      </div>
+
+      <!-- Countdown -->
+      <div class="countdown-wrapper">
+        <p class="countdown-label">Conference Begins In</p>
+        <div class="countdown" id="countdown">
+          <div class="cd-item"><span id="cd-days">--</span><label>Days</label></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-item"><span id="cd-hours">--</span><label>Hours</label></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-item"><span id="cd-mins">--</span><label>Mins</label></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-item"><span id="cd-secs">--</span><label>Secs</label></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ═══ STATS STRIP ═══ -->
+  <div class="stats-strip">
+    <div class="container stats-inner">
+      <div class="stat-item"><strong>500+</strong><span>Expected Attendees</span></div>
+      <div class="stat-item"><strong>120+</strong><span>Research Papers</span></div>
+      <div class="stat-item"><strong>40+</strong><span>Keynote Speakers</span></div>
+      <div class="stat-item"><strong>25+</strong><span>Countries Represented</span></div>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About the Institution &amp; Conference</span>
+        <h2>What Is SATHAK 2026?</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p><strong>Mohamed Sathak AJ College of Engineering (MSAJCE)</strong>, established in 2001 under the Mohamed
+            Sathak Trust, is a premier autonomous institution affiliated to Anna University and approved by AICTE.
+            Accredited with NAAC ‘A’ Grade (2023) and NBA (Mechanical – 2023), the institution is celebrating its Silver
+            Jubilee (25 Years) of academic excellence. Spread across a 70-acre green campus at Siruseri, Chennai, MSAJCE
+            fosters innovation, industry collaboration, and research-driven education.</p>
+          <p><strong>SATHAK 2026 – International Conference on Sustainable and Advanced Technologies for Holistic
+              Academic Knowledge</strong> is a multidisciplinary global platform hosted by MSAJCE to bring together
+            academicians, researchers, and industry experts to share innovative research and sustainable technological
+            advancements addressing industrial and societal needs.</p>
+          <ul class="feature-list">
+            <li>✅ Multidisciplinary Global Platform</li>
+            <li>✅ Scopus / Web of Science Indexed Proceedings</li>
+            <li>✅ Industry-Academia Collaboration</li>
+            <li>✅ Celebratory Silver Jubilee Event</li>
+            <li>✅ Best Paper Awards</li>
+          </ul>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="info-card-icon">📅</div>
+            <h4>Important Dates</h4>
+            <ul class="date-list">
+              <li><span>Paper Submission Deadline</span><strong>10 May 2026</strong></li>
+              <li><span>Acceptance Notification</span><strong>31 May 2026</strong></li>
+              <li><span>Registration Deadline</span><strong>15 Jun 2026</strong></li>
+              <li><span>Conference Dates</span><strong>23–24 July 2026</strong></li>
+              <li style="border-top: 1px dashed rgba(0,0,0,0.1); margin-top: 0.75rem; padding-top: 0.75rem;">
+                <span>Registration Fee</span><strong>Rs. 1000</strong>
+              </li>
+            </ul>
+          </div>
+          <div class="info-card accent-card">
+            <div class="info-card-icon">🎓</div>
+            <h4>Indexed Proceedings</h4>
+            <p style="margin-bottom: 0.75rem;">All submitted manuscripts will undergo a strict double-blind peer review
+              process conducted by experts from academia and industry to ensure the quality, originality, and technical
+              relevance of the research work. Only papers that are accepted after review and presented at the conference
+              will be eligible for publication.</p>
+            <p>Original research papers are invited from researchers, academicians, and industry professionals. All accepted
+              papers will be published in the conference proceedings with an ISBN number. Selected high-quality papers
+              will be published in ICTACT Journals after a rigorous peer-review process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CALL FOR CONTRIBUTIONS ═══ -->
+  <section id="call-for-contributions" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Call for Contributions</span>
+        <h2>Call for Papers &amp; Submissions</h2>
+        <div class="divider"></div>
+        <p class="section-desc">SATHAK 2026 invites original, unpublished research papers from academicians,
+          researchers, industry professionals, and scholars across the globe. The conference aims to provide a dynamic
+          international platform to present and discuss emerging trends, innovative technologies, sustainable solutions,
+          and transformative research across multidisciplinary domains.</p>
+      </div>
+
+      <div class="cfp-box" style="margin-bottom: 3rem;">
+        <h3>📋 Submission Overview</h3>
+        <p style="margin-top: 1rem; line-height: 1.6; font-size: 1.15rem;">
+          It seeks to foster collaboration between academia and industry, encourage knowledge exchange, and promote
+          research that addresses real-world industrial and societal challenges. High-quality theoretical, experimental,
+          and applied research contributions are welcome, particularly those demonstrating innovation, practical, and
+          interdisciplinary approaches.
+        </p>
+        <div style="margin-top: 2rem;">
+          <a href="http://ictactjournals.in/upload/Journal-Template.pdf" target="_blank" class="btn btn-gold" style="display: inline-flex; align-items: center; gap: 8px;">
+            <span>📄</span> Paper Submission Guidelines
+          </a>
+        </div>
+      </div>
+
+      <h3 class="tracks-title">Conference Tracks</h3>
+      <div class="accordion" id="accordion">
+
+        <!-- Track 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" data-target="track1">
+            <div class="track-header-inner">
+              <span class="track-number">Track 01</span>
+              <span class="track-title-text">Computer Science, AI &amp; Emerging Technologies</span>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body" id="track1">
+            <ul class="cfp-problem-list" style="padding-top: 1rem; margin-bottom: 0;">
+              <li>AI &amp; Machine Learning</li>
+              <li>Data Science &amp; Big Data Analytics</li>
+              <li>Cybersecurity &amp; Blockchain</li>
+              <li>Cloud, IoT &amp; Edge Computing</li>
+              <li>Software Engineering &amp; Digital Transformation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" data-target="track2">
+            <div class="track-header-inner">
+              <span class="track-number">Track 02</span>
+              <span class="track-title-text">Electrical, Electronics &amp; Communication Engineering</span>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body" id="track2">
+            <ul class="cfp-problem-list" style="padding-top: 1rem; margin-bottom: 0;">
+              <li>Power Systems &amp; Smart Grids</li>
+              <li>Renewable Energy &amp; Electric Vehicles</li>
+              <li>VLSI &amp; Embedded Systems</li>
+              <li>Signal Processing &amp; Communication Systems</li>
+              <li>5G/6G &amp; IoT Applications</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" data-target="track3">
+            <div class="track-header-inner">
+              <span class="track-number">Track 03</span>
+              <span class="track-title-text">Mechanical, Civil &amp; Sustainable Engineering</span>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body" id="track3">
+            <ul class="cfp-problem-list" style="padding-top: 1rem; margin-bottom: 0;">
+              <li>Advanced Manufacturing &amp; Industry 4.0</li>
+              <li>Robotics &amp; Automation</li>
+              <li>Sustainable Infrastructure &amp; Smart Cities</li>
+              <li>Structural &amp; Environmental Engineering</li>
+              <li>Materials Science &amp; Green Technologies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 4 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" data-target="track4">
+            <div class="track-header-inner">
+              <span class="track-number">Track 04</span>
+              <span class="track-title-text">Management, Entrepreneurship &amp; Innovation</span>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body" id="track4">
+            <ul class="cfp-problem-list" style="padding-top: 1rem; margin-bottom: 0;">
+              <li>Technology &amp; Operations Management</li>
+              <li>Business Analytics</li>
+              <li>Sustainable Business Models</li>
+              <li>Startups &amp; Innovation Ecosystems</li>
+              <li>Financial &amp; Digital Technologies</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" data-target="track5">
+            <div class="track-header-inner">
+              <span class="track-number">Track 05</span>
+              <span class="track-title-text">Applied Sciences, Humanities &amp; Interdisciplinary Research</span>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body" id="track5">
+            <ul class="cfp-problem-list" style="padding-top: 1rem; margin-bottom: 0;">
+              <li>Mathematics &amp; Computational Modeling</li>
+              <li>Physics, Chemistry &amp; Advanced Materials</li>
+              <li>Environmental &amp; Energy Studies</li>
+              <li>Technical Communication &amp; Ethics</li>
+              <li>Multidisciplinary &amp; Industry-Driven Research</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Track 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false" data-target="track6">
+            <div class="track-header-inner">
+              <span class="track-number">Track 06</span>
+              <span class="track-title-text">Sports Science, Health &amp; Physical Education</span>
+            </div>
+            <span class="accordion-icon">+</span>
+          </button>
+          <div class="accordion-body" id="track6">
+            <ul class="cfp-problem-list" style="padding-top: 1rem; margin-bottom: 0;">
+              <li>Sports Technology &amp; Analytics</li>
+              <li>Biomechanics &amp; Performance Analysis</li>
+              <li>Fitness &amp; Wellness Technologies</li>
+              <li>Sports Management</li>
+              <li>Health &amp; Rehabilitation Engineering</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="cfp-cta">
+        <a href="http://ictactjournals.in/upload/Journal-Template.pdf" target="_blank" class="btn btn-gold">Paper Submission Guidelines</a>
+        <a href="#contact" class="btn btn-navy">Enquire for Details →</a>
+        <a href="#call-for-contributions" class="btn btn-navy">View All Tracks</a>
+      </div>
+
+    </div>
+  </section>
+
+  </div>
+  </div>
+  </section>
+
+  <!-- ═══ PROGRAMME ═══ -->
+  <section id="programme" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Conference Programme</span>
+        <h2>Event Schedule</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="day-tabs">
+        <button class="day-tab active" data-day="day1">Day 1 – 23 July</button>
+        <button class="day-tab" data-day="day2">Day 2 – 24 July</button>
+      </div>
+
+      <div class="schedule-panel active" id="day1">
+        <div class="schedule-item keynote">
+          <div class="sch-time">08:00 – 09:00</div>
+          <div class="sch-body"><strong>Registration &amp; Welcome Kit Collection</strong>
+            <p>Main Lobby, Conference Centre</p>
+          </div>
+        </div>
+        <div class="schedule-item keynote">
+          <div class="sch-time">09:00 – 10:00</div>
+          <div class="sch-body"><strong>🎤 Inaugural Ceremony &amp; Welcome Address</strong>
+            <p>Chief Guest, Organizing Chair</p>
+          </div>
+        </div>
+        <div class="schedule-item gold-item">
+          <div class="sch-time">10:00 – 11:30</div>
+          <div class="sch-body"><strong>⭐ Keynote 1: The Future of AI in Engineering</strong>
+            <p>Prof. James Mitchell, MIT, USA</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">11:30 – 11:45</div>
+          <div class="sch-body"><strong>☕ Tea / Networking Break</strong></div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">11:45 – 13:15</div>
+          <div class="sch-body"><strong>📖 Technical Session 1 – Track 01: Engineering &amp; Applied Sciences</strong>
+            <p>Paper Presentations (6 papers)</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">13:15 – 14:15</div>
+          <div class="sch-body"><strong>🍽 Lunch Break</strong></div>
+        </div>
+        <div class="schedule-item gold-item">
+          <div class="sch-time">14:15 – 15:45</div>
+          <div class="sch-body"><strong>⭐ Keynote 2: Sustainable Innovation for the Next Decade</strong>
+            <p>Dr. Priya Nair, IIT Bombay, India</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">16:00 – 17:30</div>
+          <div class="sch-body"><strong>🔬 Workshop: Hands-on with Machine Learning</strong>
+            <p>Lab Block A</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">18:00 – 20:00</div>
+          <div class="sch-body"><strong>🥂 Welcome Dinner &amp; Networking Gala</strong>
+            <p>Grand Ballroom</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="schedule-panel" id="day2">
+        <div class="schedule-item gold-item">
+          <div class="sch-time">09:00 – 10:30</div>
+          <div class="sch-body"><strong>⭐ Keynote 3: Quantum Computing – Redefining Possibilities</strong>
+            <p>Prof. Li Wei, Tsinghua University, China</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">10:45 – 12:15</div>
+          <div class="sch-body"><strong>📖 Technical Session 2 – Track 02: Computer Science &amp; Emerging
+              Technologies</strong>
+            <p>Paper Presentations (6 papers)</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">12:15 – 13:15</div>
+          <div class="sch-body"><strong>🍽 Lunch Break</strong></div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">13:15 – 15:00</div>
+          <div class="sch-body"><strong>📖 Technical Session 3 – Track 03: Innovation &amp; Sustainable
+              Development</strong>
+            <p>Paper Presentations (6 papers)</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">15:15 – 16:45</div>
+          <div class="sch-body"><strong>💬 Panel Discussion: Industry–Academia Collaboration</strong>
+            <p>Moderated by Dr. Ramesh Kumar</p>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="sch-time">17:00 – 18:30</div>
+          <div class="sch-body"><strong>🏆 Poster Session &amp; Best Poster Award</strong></div>
+        </div>
+      </div>
+      <!-- Day 3 Panel Removed -->
+    </div>
+  </section>
+  <!-- ═══ ORGANIZERS ═══ -->
+  <style>
+    .org-group {
+      margin-top: 3rem;
+    }
+
+    .org-group-title {
+      color: var(--navy);
+      font-size: 1.15rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-bottom: 2px solid var(--gold);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .org-group-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .organizer-card-new {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      border-top: 4px solid var(--gold);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .organizer-card-new:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .org-role-new {
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+
+    .org-name-new {
+      color: var(--navy);
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    .org-affil-new {
+      color: var(--text-light);
+      font-size: 1.15rem;
+      line-height: 1.4;
+    }
+
+    .org-photo-wrapper {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto 1.25rem;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, var(--gold), #f39c12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .org-photo-placeholder {
+      width: 100%;
+      height: 100%;
+      background: #f8f9fa;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #dee2e6;
+    }
+
+    .org-photo-placeholder svg {
+      width: 50%;
+      height: 50%;
+    }
+
+    /* Organizer Photo Helper Classes */
+    .org-img-container {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .org-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .org-img-zoom {
+      transform: scale(1.2);
+    }
+
+    .pos-c10 { object-position: center 10%; }
+    .pos-c15 { object-position: center 15%; }
+    .pos-c25 { object-position: center 25%; }
+    .pos-c35 { object-position: center 35%; }
+
+    .principal-img {
+      /* Centering: shifted right/down with reduced zoom for full body and head visibility */
+      object-position: 52% 35%;
+      transform: scale(1.1);
+      transform-origin: center center;
+    }
+
+    .campus-director-img {
+      object-position: center 25%;
+      transform: scale(1.2);
+    }
+
+    .ramya-img {
+      object-position: center 20%;
+      transform: scale(1.2);
+    }
+  </style>
+
+  <section id="organizers" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Committee</span>
+        <h2>Organizers Team</h2>
+        <div class="divider"></div>
+        <p class="section-desc">Meet the dedicated team behind SATHAK 2026</p>
+      </div>
+
+      <!-- CHIEF PATRONS -->
+      <div class="org-group">
+        <div class="org-group-title">Chief Patrons</div>
+        <div class="org-group-grid">
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="chairman.jpg" alt="Alhaj Janab S. M. Yousuf" class="org-img pos-c10">
+              </div>
+            </div>
+            <div class="org-name-new">Alhaj Janab S. M. Yousuf</div>
+            <div class="org-affil-new">Chairman</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="secretary.jpg" alt="Mrs. S. M. H. Sharmila" class="org-img org-img-zoom pos-c10">
+              </div>
+            </div>
+            <div class="org-name-new">Mrs. S. M. H. Sharmila</div>
+            <div class="org-affil-new">Secretary</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="Executive Director.jpg" alt="Janab P. R. L. Hamid Ibrahim" class="org-img org-img-zoom pos-c10">
+              </div>
+            </div>
+            <div class="org-name-new">Janab P. R. L. Hamid Ibrahim</div>
+            <div class="org-affil-new">Executive Director</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="campus_director.jpg" alt="Mr. S. M. Y. Mohamed Sathak" class="org-img campus-director-img">
+              </div>
+            </div>
+            <div class="org-name-new">Mr. S. M. Y. Mohamed Sathak</div>
+            <div class="org-affil-new">Campus Director</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PATRON -->
+      <div class="org-group">
+        <div class="org-group-title">Patron</div>
+        <div class="org-group-grid">
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="principal.png" alt="Dr. K.S. Srinivasan" class="org-img principal-img">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. K.S. Srinivasan</div>
+            <div class="org-affil-new">Principal</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONVENOR -->
+      <div class="org-group">
+        <div class="org-group-title">Convenor</div>
+        <div class="org-group-grid">
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="regilan.jpg" alt="Dr. S. Regilan" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. S. Regilan</div>
+            <div class="org-affil-new">Head Research</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONFERENCE CHAIRS -->
+      <div class="org-group">
+        <div class="org-group-title">Conference Chairs</div>
+        <div class="org-group-grid">
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="balakrishnan.jpg" alt="Dr. A. Balakrishnan" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. A. Balakrishnan</div>
+            <div class="org-affil-new">Vice Principal</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="ramesh.jpg" alt="Dr. G. Ramesh" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. G. Ramesh</div>
+            <div class="org-affil-new">Director IQAC</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="weslin.jpg" alt="Dr. D. Weslin" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. D. Weslin</div>
+            <div class="org-affil-new">Director ISE</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONFERENCE CO-CHAIRS -->
+      <div class="org-group">
+        <div class="org-group-title">Conference Co-Chairs</div>
+        <div class="org-group-grid">
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="susee.jpg" alt="Dr. S. K. Susee" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. S. K. Susee</div>
+            <div class="org-affil-new">HOD – VLSI</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="amutha.jpg" alt="Dr. S. Amutha" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. S. Amutha</div>
+            <div class="org-affil-new">Head – Science & Humanities (S&H)</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="mariasusai.jpg" alt="Dr. Maria Susai Arulanantham A" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. Maria Susai Arulanantham A</div>
+            <div class="org-affil-new">Associate Professor – Science & Humanities (S&H)</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="pattathurani.jpg" alt="Dr. Pattathurani" class="org-img pos-c35">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. Pattathurani</div>
+            <div class="org-affil-new">HOD – Information Technology (IT)</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="preethi.jpg" alt="Dr. Preethi Mary" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. Preethi Mary</div>
+            <div class="org-affil-new">HOD – Civil Engineering</div>
+          </div>
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="someswaran.jpg" alt="Dr. Someswaran" class="org-img pos-c25">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. Someswaran</div>
+            <div class="org-affil-new">HOD – AI &amp; Cyber Security</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ORGANIZING SECRETARY -->
+      <div class="org-group">
+        <div class="org-group-title">Organizing Secretary</div>
+        <div class="org-group-grid">
+          <div class="organizer-card-new">
+            <div class="org-photo-wrapper">
+              <div class="org-img-container">
+                <img src="ramya.jpg" alt="Dr. M. Ramya" class="org-img ramya-img">
+              </div>
+            </div>
+            <div class="org-name-new">Dr. M. Ramya</div>
+            <div class="org-affil-new">Secretary, Institutional Research Committee</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ VENUE ═══ -->
+  <section id="venue" class="section bg-light">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Venue</span>
+        <h2>Conference Venue</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="venue-grid">
+        <div class="venue-info">
+          <h3>🏛 Mohamed Sathak AJ College of Engineering</h3>
+          <p class="venue-address">📍 SIPCOT IT Park, Siruseri, Chennai – 603103, Tamil Nadu</p>
+          <div class="venue-details">
+            <div class="venue-detail-item">
+              <span class="vd-icon">✈️</span>
+              <div>
+                <strong>By Air</strong>
+                <p>Chennai International Airport (MAA) — 25 km from venue. Taxis, Ola, Uber available.</p>
+              </div>
+            </div>
+            <div class="venue-detail-item">
+              <span class="vd-icon">�</span>
+              <div>
+                <strong>By Bus</strong>
+                <p>Frequent MTC buses connect Siruseri SIPCOT from major bus terminuses like Broadway, T.Nagar, and
+                  Tambaram.</p>
+              </div>
+            </div>
+            <div class="venue-detail-item">
+              <span class="vd-icon">🏨</span>
+              <div>
+                <strong>Recommended Hotels</strong>
+                <p>Novotel Chennai SIPCOT, Ibis Chennai SIPCOT, Days Hotel Chennai OMR (5–10 min)</p>
+              </div>
+            </div>
+            <div class="venue-detail-item">
+              <span class="vd-icon">🌡️</span>
+              <div>
+                <strong>Climate in October</strong>
+                <p>Warm and humid; 28–34°C. Light tropical attire recommended.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="venue-map">
+          <iframe
+            src="https://maps.google.com/maps?q=Mohamed%20Sathak%20A.J.%20College%20of%20Engineering,%20SIPCOT%20IT%20Park,%20Siruseri,%20Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="400" style="border:0; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Conference Location Map">
+          </iframe>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SPONSORS ═══ -->
+  <section id="sponsors" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sponsorship</span>
+        <h2>Sponsors &amp; Partners</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="sponsor-tiers">
+        <div class="sponsor-tier">
+          <div class="sponsor-logos tier-platinum">
+            <div class="sponsor-logo-box">TechCorp Global</div>
+            <div class="sponsor-logo-box">InnovateTech Ltd.</div>
+          </div>
+        </div>
+        <div class="sponsor-tier">
+          <div class="sponsor-logos tier-gold">
+            <div class="sponsor-logo-box">FutureDrive Inc.</div>
+            <div class="sponsor-logo-box">SmartSys Pvt. Ltd.</div>
+            <div class="sponsor-logo-box">DataEdge Labs</div>
+          </div>
+        </div>
+        <div class="sponsor-tier">
+          <div class="sponsor-logos tier-silver">
+            <div class="sponsor-logo-box">CloudNova</div>
+            <div class="sponsor-logo-box">EduTech Partners</div>
+            <div class="sponsor-logo-box">GreenStar Solutions</div>
+            <div class="sponsor-logo-box">BioSync Systems</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="become-sponsor">
+        <h3>Become a Sponsor</h3>
+        <p>Partner with ICETI 2026 to gain visibility among 500+ global academics, engineers, and industry leaders. We
+          offer customizable sponsorship packages.</p>
+        <a href="#contact" class="btn btn-gold">Enquire About Sponsorship →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CONTACT + CERTIFICATE ═══ -->
+  <!-- Contact Section Styles -->
+  <style>
+    .contact-unique-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .contact-card-unique {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .contact-card-unique:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+      border-color: var(--gold);
+    }
+
+    .contact-card-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      background: linear-gradient(135deg, var(--gold), #f39c12);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .contact-card-title {
+      color: var(--gold);
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-card-text {
+      color: white;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .contact-social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .contact-social-link {
+      color: white;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .contact-social-link:hover {
+      color: var(--gold);
+      transform: scale(1.2);
+    }
+  </style>
+
+  <section id="contact" class="section bg-navy">
+    <div class="container">
+      <div class="section-header light">
+        <span class="section-tag light-tag">Reach Out</span>
+        <h2 class="light-h2">Contact Us</h2>
+        <div class="divider gold-div"></div>
+        <p class="section-desc" style="color: rgba(255,255,255,0.7); max-width: 600px; margin: 0 auto;">Have questions?
+          Our team is here to help you with anything related to ICETI 2026.</p>
+      </div>
+
+      <div class="contact-unique-grid">
+
+        <!-- Email Card -->
+        <div class="contact-card-unique">
+          <div class="contact-card-icon">📧</div>
+          <h4 class="contact-card-title">Email Support</h4>
+          <p class="contact-card-text">
+            <a href="mailto:sathak2026@gmail.com"
+              style="color: inherit; text-decoration: none;">sathak2026@gmail.com</a>
+          </p>
+        </div>
+
+        <!-- Location Card -->
+        <div class="contact-card-unique">
+          <div class="contact-card-icon">📍</div>
+          <h4 class="contact-card-title">Head of Research and Innovation</h4>
+          <p class="contact-card-text" style="font-size: 0.95rem;"> Department of Engineering<br>MSAJCE, SIPCOT IT
+            Park<br>Siruseri, Chennai, India</p>
+        </div>
+
+        <!-- Social Card -->
+        <div class="contact-card-unique">
+          <div class="contact-card-icon">🌐</div>
+          <h4 class="contact-card-title">Connect</h4>
+          <div class="contact-social-icons">
+            <a href="https://www.linkedin.com/in/msajce?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="contact-social-link" aria-label="LinkedIn">in</a>
+            <a href="https://www.instagram.com/msajce?igsh=MTdmaHprcnZua2J2aA==" target="_blank" class="contact-social-link" aria-label="Instagram">ig</a>
+          </div>
+          <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 1rem;">Office Hours: 9 AM - 5 PM IST
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span class="logo-abbr">SATHAK <span class="gold">2026</span></span>
+        <span class="logo-sub">International Conference on Sustainable and Advanced Technologies for Holistic Academic
+          Knowledge</span>
+      </div>
+      <div class="footer-links">
+        <div class="footer-links-row">
+          <a href="#about">About</a>
+          <a href="#call-for-contributions">Call for Papers</a>
+          <a href="#programme">Programme</a>
+          <a href="#venue">Venue</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-links-row">
+          <a href="terms-and-conditions.html">Terms and Conditions</a>
+          <a href="developer.html">Developer</a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 SATHAK 2026 – All Rights Reserved. Powered by the SATHAK 2026 Organizing Committee,
+        Chennai,
+        India.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
